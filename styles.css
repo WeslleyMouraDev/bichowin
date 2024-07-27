@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #e0e0e0;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  margin: 2vw 20vw; /* Margens horizontais e verticais usando unidades de viewport */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #444;
+  padding: 5px; /* Reduzir o preenchimento */
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #555;
+  color: #e0e0e0;
+}
+
+button {
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #555;
+}
+
+.table-container {
+  overflow-x: auto; /* Permite rolagem horizontal */
+}
+
+#resultadosSimulador {
+  margin-top: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+}
+
+#resultadosSimulador p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+#resultadosSimulador span {
+  font-weight: bold;
+}
+
+#quantApostas {
+  color: #a0c4ff; /* Azul claro */
+}
+
+#vit {
+  color: #8bdc74; /* Verde claro */
+}
+
+#der {
+  color: #ff6b6b; /* Vermelho claro */
+}
+
+#saldoInicialResult {
+  color: #f9a05a; /* Laranja claro */
+}
+
+#saldoFinal {
+  color: #4db6ac; /* Verde água */
+}
+
+#lucro {
+  color: #ffcc00; /* Amarelo */
+}
+
+@media (max-width: 600px) {
+  #resultadosSimulador p {
+    font-size: 14px;
+  }
+}
+
+table {
+  min-width: 1000px; /* Define a largura mínima para rolagem */
+}
+
+@media (max-width: 600px) {
+  .table-container {
+    overflow-x: auto; /* Permite rolagem horizontal */
+  }
+
+  section {
+    padding: 20px;
+    margin: 5vw 4vw; /* Margens horizontais e verticais usando unidades de viewport */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+
+  table {
+    min-width: 80px; /* Define a largura mínima para rolagem */
+  }
+
+  th,
+  td {
+    width: 0px;
+    text-align: left;
+  }
+}

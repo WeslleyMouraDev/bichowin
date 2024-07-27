@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">BichoWin</a>
         <button
@@ -24,14 +24,14 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
+          aria-expanded="true"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Apostar</a>
             <a class="nav-link" href="#cotacoes">Cotações</a>
             <a class="nav-link" href="#simulador">Simulador</a>
             <a class="nav-link" href="#resultados">Resultados</a>
@@ -52,13 +52,17 @@
           <thead>
             <tr>
               <th>Tipo de Aposta</th>
-              <th>Premiação</th>
+              <th>Premiação 1°</th>
+              <th>Premiação 1° ao 5°</th>
+              <th>Premiação 1° ao 7°</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Grupo</td>
               <td>18x</td>
+              <td>3.6x</td>
+              <td>2x</td>
             </tr>
             <!-- Adicione mais linhas conforme necessário -->
           </tbody>
@@ -128,7 +132,7 @@
         <input type="date" id="data" name="data" />
 
         <label for="banca">Banca:</label>
-        <select id="banca" name="banca">
+        <select id="banca" name="banca" class="form-select">
           <option value="12">PIX</option>
           <option value="2">Rio de Janeiro</option>
           <option value="3">Federal</option>
@@ -151,13 +155,13 @@
           <thead>
             <tr>
               <th>Loteria</th>
-              <th>Primeira Colocação</th>
-              <th>Segunda Colocação</th>
-              <th>Terceira Colocação</th>
-              <th>Quarta Colocação</th>
-              <th>Quinta Colocação</th>
-              <th>Sexta Colocação</th>
-              <th>Sétima Colocação</th>
+              <th>1° Prêmio</th>
+              <th>2° Prêmio</th>
+              <th>3° Prêmio</th>
+              <th>4° Prêmio</th>
+              <th>5° Prêmio</th>
+              <th>6° Prêmio</th>
+              <th>7° Prêmio</th>
             </tr>
           </thead>
           <tbody id="resultadosTabela">
@@ -168,5 +172,10 @@
     </section>
 
     <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

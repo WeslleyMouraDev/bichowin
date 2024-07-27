@@ -61,7 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
     yesterday.setDate(today.getDate() - 1);
 
     // Formata a data no formato YYYY-MM-DD
-    const formattedDate = yesterday.toISOString().split('T')[0];
+    // const formattedDate = yesterday.toISOString().split('T')[0];
+    const formattedDate = today.toISOString().split('T')[0];
 
     // Define o valor do input de data
     document.getElementById("data").value = formattedDate;
@@ -131,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
             saldoFinal = saldoInicial;
         }
 
-        saldoFinal += valorAposta * (payout - quantGrupos);
+        saldoFinal += valorAposta * (payout - quantGrupos) + valorAposta;
         lucro = saldoFinal - saldoInicial;
         vitorias++;
         quantApostas++;
